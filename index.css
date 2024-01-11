@@ -38,6 +38,7 @@ font-family: 'Work Sans', sans-serif;*/
     --star-color: #FFDA16;
     --textcolor-baby-talk-grey: #BABABA;
     --textcolor-briquette-grey: #515151;
+    --textcolor-coronation: #ECECEC;
 }
 
 .container {
@@ -799,13 +800,12 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 55px;
+    margin-bottom: 149px;
 }
 
 .news-section>div {
     text-align: center;
     display: flex;
-
-
 }
 
 .news {
@@ -909,29 +909,29 @@ nav {
     color: var(--textcolor-briquette-grey);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* News-End */
+
+/* Footer-Start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer-End */
