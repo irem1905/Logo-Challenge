@@ -5,31 +5,39 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;*/
 :root {
-    --primary-color: #282C6D;
+    --primary-color: #282c6d;
     --text-color: #000;
     --background-color: #fff;
-    --light-purple-background-color: #F1F2FE;
-    --light-textcolor: #9A9A9A;
-    --green-textcolor: #04B200;
-    --orange-textcolor: #FF5325;
+    --light-purple-background-color: #f1f2fe;
+    --light-textcolor: #9a9a9a;
+    --green-textcolor: #04b200;
+    --orange-textcolor: #ff5325;
     --darkblue-background-color: #040844;
     --yellow-background-color: #ffd910;
-    --lightgreen-background-color: #EAFFE7;
-    --point-rubber-radish-bacground-color: #FF9A9A;
-    --darkpurple-color: #E59AFF;
+    --lightgreen-background-color: #eaffe7;
+    --point-rubber-radish-bacground-color: #ff9a9a;
+    --darkpurple-color: #e59aff;
     --footer-background-color: #040844;
     --SonicSilver-textcolor: #767676;
-    --page-separator-line-color: #D6D6D6;
-    --read-more-background-color: #E1FFE0;
-    --read-more-textcolor: #04B200;
-    --textcolor-aria: #E3E3E3;
-    --textcolor-stieglitz-silver: #8E8E8E;
-    --background-color-emptiness: #FCFCFC;
+    --page-separator-line-color: #d6d6d6;
+    --read-more-background-color: #e1ffe0;
+    --read-more-textcolor: #04b200;
+    --textcolor-aria: #e3e3e3;
+    --textcolor-stieglitz-silver: #8e8e8e;
+    --background-color-emptiness: #fcfcfc;
     --textcolor-darkcharcoal: #323232;
-    --background-color-macarooncream: #FFE9D6;
-    --background-color-ceramitewhite: #FFFCE0;
-    --textcolor-codexgrey: #9C9C9C;
-    --framecolor-silver: #BFBFBF;
+    --background-color-macarooncream: #ffe9d6;
+    --background-color-ceramitewhite: #fffce0;
+    --textcolor-codexgrey: #9c9c9c;
+    --framecolor-silver: #bfbfbf;
+    --textcolor-rhinecastle: #5F5F5F;
+    --background-color-brilliantwhite: #F1F2FE;
+    --icon-color-pixel-white: #dbdbdb;
+    --textcolor-ıron: #5E5E5E;
+    --textcolor-dark-souls: #A3A3A3;
+    --star-color: #FFDA16;
+    --textcolor-baby-talk-grey: #BABABA;
+    --textcolor-briquette-grey: #515151;
 }
 
 .container {
@@ -51,7 +59,7 @@ ul {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 /*Navbar*/
@@ -61,11 +69,10 @@ nav {
     height: 82px;
     flex-shrink: 0;
     background: var(--background-color);
-    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 44px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .navbar-logo {
@@ -80,7 +87,6 @@ nav {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
 }
 
 .navbar-social-media {
@@ -88,7 +94,6 @@ nav {
     margin-left: auto;
     display: flex;
 }
-
 
 .nav-icon {
     display: flex;
@@ -153,7 +158,6 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: 36px;
-
 }
 
 .dashboard-content-title {
@@ -180,7 +184,7 @@ nav {
 }
 
 .dashboard-content-button:hover {
-    background-color: #1A1E48;
+    background-color: #1a1e48;
 }
 
 /*Dashboard end*/
@@ -210,8 +214,6 @@ nav {
 
 .dashboard-client-title {
     text-align: center;
-
-
 }
 
 .dashboard-client-subtitle {
@@ -249,8 +251,8 @@ nav {
 .about-us {
     height: 38px;
     font-size: 22px;
+    color: var(--orange-textcolor);
 }
-
 
 .translation {
     display: inline-flex;
@@ -266,7 +268,7 @@ nav {
 }
 
 .translation::after {
-    content: '\2192';
+    content: "\2192";
     /*Ok simgesi*/
     margin-left: 5px;
     width: 24px;
@@ -328,6 +330,7 @@ nav {
     line-height: normal;
     top: 60px;
     margin: 0;
+    color: var(--orange-textcolor);
 }
 
 .what-subtitle {
@@ -423,7 +426,6 @@ nav {
     margin-bottom: 23px;
 }
 
-
 .learn-more {
     display: flex;
     align-items: center;
@@ -461,22 +463,475 @@ nav {
 /* Plus-Start */
 
 .plus-part {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     border-radius: 20px;
+    padding: 54px 100px;
     border: 1px solid var(--framecolor-silver);
     background: var(--background-color);
 }
 
-.plus-1 {
+.plus {
+    text-align: center;
+}
+
+.plus-title {
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0;
 }
 
-.plus-lorem-1 {
+.plus-subtitle {
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     color: var(--textcolor-codexgrey);
 }
+
+/* Plus-End */
+
+/* Our-Work-Start */
+
+.our-work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    /* display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start; */
+}
+
+.our-work-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--orange-textcolor);
+}
+
+.our-work-subtitle {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.translation-one {
+    display: inline-flex;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: var(--read-more-textcolor);
+    background-color: var(--read-more-background-color);
+    border: 1px solid var(--read-more-background-color);
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.translation-one::after {
+    content: "\2192";
+    /*Ok simgesi*/
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    left: 1131px;
+}
+
+/* Our-Work-End */
+
+/* Work-Pictures-Start */
+
+.works-department {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-text,
+.right-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.food-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.food-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-rhinecastle);
+}
+
+.podcast-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.podcast-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-rhinecastle);
+}
+
+.e-pay-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.e-pay-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-rhinecastle);
+}
+
+.service-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-subtitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-rhinecastle);
+}
+
+/* Work-Pictures-End */
+
+.spacer-two {
+    margin-bottom: 158px;
+}
+
+.testimonial-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--orange-textcolor);
+}
+
+.testimonial-subtitle {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.reference-section {
+    background-color: var(--background-color-brilliantwhite);
+    height: 777px;
+    margin-left: -120px;
+    margin-right: -120px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 102px;
+    /* box-sizing: border-box; */
+}
+
+.btn-2 {
+    width: 59px;
+    height: 59px;
+    border: none;
+    color: var(--background-color);
+    background-color: var(--green-textcolor);
+    cursor: pointer;
+    border: 2px solid var(--background-color-brilliantwhite);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.btn-2:hover {
+    color: var(--green-textcolor);
+    background-color: var(--background-color);
+    border: 2px solid var(--background-color-brilliantwhite);
+}
+
+
+/* Card-Styles-Start */
+
+.white-card {
+    background-color: var(--background-color);
+    /* Arkaplan rengini beyaz yap */
+    border-radius: 10px;
+    /* Köşeleri yuvarlatmak için kenar yarıçapı ekle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hafif bir gölge ekleyerek derinlik kazandır */
+    padding: 20px;
+    /* İhtiyaca göre iç boşluğu ayarla */
+    width: 497px;
+    height: 313px;
+    display: inline-flex;
+    margin-left: 26px;
+}
+
+
+/* Alıntı yapılmış resim için stilleri ekle */
+.card-one img {}
+
+.card-one {
+    margin-top: 36px;
+    margin-left: 46px;
+    margin-right: 78px;
+}
+
+/* John başlığı paragrafı için stilleri uygula */
+.card-one .john-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-rhinecastle);
+}
+
+/* John ismi için stilleri uygula */
+.card-one .name-john {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--textcolor-ıron);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* John'un alt başlığı için stiller uygulanır */
+.card-one .john-subtitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--textcolor-dark-souls);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.name-ceo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.two-paragraphs {
+    display: flex;
+    flex-direction: column;
+}
+
+.john-right {
+    margin-right: 17px;
+}
+
+.scoring-number {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--textcolor-baby-talk-grey);
+    margin-top: 0px;
+    margin-left: 6px;
+}
+
+.yellow-stars {
+    display: flex;
+    /* Yıldızları yatay düzenler */
+    color: var(--star-color);
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.yellow-stars i {
+    width: 20px;
+    height: 20px;
+}
+
+.scoring-number {
+    margin-left: 6px;
+    /* Yıldızlar ile sayı arasındaki boşluğu ayarlar */
+}
+
+.name-and-rating {
+    display: flex;
+}
+
+.comment-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 sütunlu grid */
+    gap: 10px;
+    /* Boşluklar arasındaki mesafe */
+    overflow-x: auto;
+    margin-bottom: 231px;
+}
+
+.comment-cards::-webkit-scrollbar {
+    display: none;
+    /*  scrollbar gözükmesin */
+}
+
+/* Card-Styles-End */
+
+
+
+/* News-Start */
+
+.news-section {
+
+    flex-direction: row;
+    align-items: center;
+    gap: 55px;
+}
+
+.news-section>div {
+    text-align: center;
+    display: flex;
+
+
+}
+
+.news {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.laptop-section,
+.business-section,
+.man-photo-section,
+.crazy-section {
+    margin-right: 55px;
+}
+
+
+.news-title {
+    width: 210px;
+    height: 38px;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--orange-textcolor);
+}
+
+.news-subtitle {
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.laptop-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.laptop-subtitle {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--textcolor-briquette-grey);
+}
+
+.business-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.business-subtitle {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--textcolor-briquette-grey);
+}
+
+.man-photo-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.man-photo-subtitle {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--textcolor-briquette-grey);
+}
+
+.crazy-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.crazy-subtitle {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--textcolor-briquette-grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* News-End */
